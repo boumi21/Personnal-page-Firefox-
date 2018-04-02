@@ -21,7 +21,7 @@ var searchSources = [
   ["bbt",      "http://bakabt.me/browse.php?q={Q}",                      "BakaBT"],
   ["ddc",      "https://duckduckgo.com/?q={Q}",                      "DuckDuckGo"],
   ["qwt",      "https://www.qwant.com/?q={Q}",                      "Qwant"],
-  ["ecosia",      "https://www.ecosia.org/search?q={Q}",                      "Ecosia"],
+  ["ecosia",   "https://www.ecosia.org/search?q={Q}",                      "Ecosia"],
   ["g",        "https://www.google.com/#q={Q}",                          "google_logo"],
   ["im",       "https://www.google.com/search?tbm=isch&q={Q}",           "google_logo Images"],
   ["imdb",     "http://www.imdb.com/find?q={Q}",                         "IMDB"],
@@ -98,6 +98,8 @@ var searchInput = $('searchBar');
 var rootMenuUL = $('categoryMenu');
 var dateDiv = $('dateContainer');
 var notesTextarea = $('notesInput');
+
+var song = $('mySong')
 
 function init() {
   initSearchBar();
