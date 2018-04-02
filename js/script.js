@@ -15,10 +15,13 @@ var dayNames = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THRUSDAY", "FRIDAY"
 
 var CookiePrefix = "taco_stpg_"; //prefix for cookies.
 var cmdPrefix = "!"; //prefix for commands.
-var ssi = 1; //set default search provider. Use array index of the array below. (Starting with 0)
+var ssi = 3; //set default search provider. Use array index of the array below. (Starting with 0)
 // Format: [Keyword, Search URL (Search query replaces "{Q}"), "Input placeholder text"]
 var searchSources = [
   ["bbt",      "http://bakabt.me/browse.php?q={Q}",                      "BakaBT"],
+  ["ddc",      "https://duckduckgo.com/?q={Q}",                      "DuckDuckGo"],
+  ["qwt",      "https://www.qwant.com/?q={Q}",                      "Qwant"],
+  ["ecosia",      "https://www.ecosia.org/search?q={Q}",                      "Ecosia"],
   ["g",        "https://www.google.com/#q={Q}",                          "google_logo"],
   ["im",       "https://www.google.com/search?tbm=isch&q={Q}",           "google_logo Images"],
   ["imdb",     "http://www.imdb.com/find?q={Q}",                         "IMDB"],
